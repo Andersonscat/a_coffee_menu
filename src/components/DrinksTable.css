@@ -1,0 +1,19 @@
+.drinks-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Fira Mono', monospace;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+}
+.drinks-table td {
+  border: 1px solid #d6cfc7;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #222;
+}
+.drinks-table .new {
+  color: #2ecc40;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-left: 8px;
+} 

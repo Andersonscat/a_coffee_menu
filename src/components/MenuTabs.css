@@ -1,0 +1,29 @@
+.menu-tabs {
+  width: 100%;
+  box-sizing: border-box;
+}
+.tab-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.tab-list button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: #888;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border 0.2s;
+}
+.tab-list button.active {
+  color: #222;
+  border-bottom: 2px solid #222;
+}
+.tab-content {
+  min-height: 200px;
+} 
