@@ -622,51 +622,16 @@ function Modal({ children, onClose }) {
   return (
     <div>
       <div
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100vw',
-          height: '100vh',
-          background: 'rgba(0,0,0,0.10)',
-          backdropFilter: 'blur(6px)',
-          zIndex: 1000,
-        }}
+        className="modal-overlay"
         onClick={onClose}
       />
       <div
-        style={{
-          position: 'fixed',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          background: '#fff',
-          borderRadius: 24,
-          boxShadow: '0 4px 32px #0002',
-          zIndex: 1001,
-          padding: 32,
-          minWidth: 340,
-          minHeight: 320,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          fontFamily: 'Fira Mono, monospace',
-        }}
+        className="modal-content"
         onClick={e => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: 16,
-            right: 24,
-            background: 'none',
-            border: 'none',
-            fontSize: 28,
-            color: '#888',
-            cursor: 'pointer',
-            lineHeight: 1,
-          }}
+          className="modal-close"
           aria-label="Закрыть"
         >
           ×
@@ -708,7 +673,7 @@ function App() {
     <div className="App" style={{ background: '#fff' }}>
       <div className="menu-accent" />
       <Header />
-      <main style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <main>
         <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда"]}>
           {/* Горячие напитки */}
           <SectionsRow>

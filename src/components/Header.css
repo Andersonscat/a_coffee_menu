@@ -21,4 +21,28 @@
 .socials span {
   margin-left: 10px;
   font-size: 1.2rem;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+    padding: 32px 20px;
+    margin-bottom: 24px;
+  }
+  
+  .plain-logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 24px 16px;
+    margin-bottom: 20px;
+  }
+  
+  .plain-logo {
+    font-size: 1.6rem;
+  }
 } 

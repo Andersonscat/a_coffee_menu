@@ -4,25 +4,48 @@
   font-family: 'Fira Mono', monospace;
   margin: 0 auto 40px auto;
   max-width: 600px;
+  table-layout: fixed;
 }
+
 .drinks-table td {
   border: 1px solid #d6cfc7;
   padding: 8px 16px;
   font-size: 1rem;
   color: #222;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  vertical-align: top;
 }
+
+.drinks-table td:first-child {
+  width: 60%;
+}
+
+.drinks-table td:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+.drinks-table td:last-child {
+  width: 20%;
+  text-align: right;
+}
+
 .drinks-table .new {
   color: #2ecc40;
   font-size: 0.9em;
   font-weight: bold;
   margin-left: 8px;
+  white-space: nowrap;
 }
+
 .drink-details {
   display: flex;
   margin-top: 24px;
   gap: 40px;
   align-items: flex-start;
 }
+
 .ingredients-scroll {
   max-height: 180px;
   overflow-y: auto;
@@ -32,8 +55,102 @@
   padding: 16px;
   background: #fafafa;
 }
+
 .drink-image img {
   max-width: 180px;
   border-radius: 8px;
   box-shadow: 0 2px 8px #0001;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .drinks-table {
+    max-width: 100%;
+    margin: 0 auto 32px auto;
+    table-layout: fixed;
+  }
+  
+  .drinks-table td {
+    padding: 12px 8px;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.3;
+  }
+  
+  .drinks-table td:first-child {
+    width: 55%;
+    padding-left: 12px;
+    padding-right: 6px;
+  }
+  
+  .drinks-table td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  
+  .drinks-table td:last-child {
+    width: 25%;
+    text-align: right;
+    padding-left: 6px;
+    padding-right: 12px;
+  }
+  
+  .drinks-table .new {
+    font-size: 0.8em;
+    margin-left: 4px;
+    white-space: nowrap;
+  }
+  
+  .drink-details {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+  }
+  
+  .ingredients-scroll {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .drink-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .drinks-table td {
+    padding: 10px 6px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  
+  .drinks-table td:first-child {
+    width: 50%;
+    padding-left: 8px;
+    padding-right: 4px;
+  }
+  
+  .drinks-table td:nth-child(2) {
+    width: 25%;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  
+  .drinks-table td:last-child {
+    width: 25%;
+    text-align: right;
+    padding-left: 4px;
+    padding-right: 8px;
+  }
+  
+  .drinks-table .new {
+    font-size: 0.75em;
+    margin-left: 3px;
+    white-space: nowrap;
+  }
 } 
