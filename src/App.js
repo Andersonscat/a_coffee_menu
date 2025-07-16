@@ -390,15 +390,6 @@ const smoothies = [
   },
 ];
 
-const seasonal = [
-  { name: 'Милкшейк "Фисташка"', img: 'https://raul.kz/images/menu/milkshake-fistashka.png', price: 3200 },
-  { name: 'Айс-ти "Смородина-Базилик"', img: 'https://raul.kz/images/menu/ice-tea-smorodina-basilik.png', price: 2200 },
-  { name: 'Лимонад "Ананас-Щавель"', img: 'https://raul.kz/images/menu/lemonade-ananas-shavel.png', price: 2200 },
-  { name: 'Смузи "Тропик"', img: 'https://raul.kz/images/menu/smoothie-tropik.png', price: 3200 },
-  { name: 'Бамбл "Матча арбуз"', img: 'https://raul.kz/images/menu/bambl-matcha-arbuz.png', price: 3200 },
-  { name: 'Айс-какао с сырной шапкой', img: 'https://raul.kz/images/menu/ice-cacao-syrnaya-shapka.png', price: 3200 },
-];
-
 const breakfastBakery = [
   {
     name: 'Континентальный завтрак',
