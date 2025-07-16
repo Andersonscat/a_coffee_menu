@@ -627,41 +627,6 @@ function SectionsRow({ children }) {
   return <div className="sections-row">{children}</div>;
 }
 
-function DrinkInfo({ item }) {
-  if (!item) return null;
-  return (
-    <div style={{
-      display: 'flex',
-      gap: 40,
-      alignItems: 'flex-start',
-      margin: '48px auto',
-      maxWidth: 800,
-      background: '#fafafa',
-      borderRadius: 12,
-      boxShadow: '0 2px 12px #0001',
-      padding: 32
-    }}>
-      {item.img && (
-        <div style={{ minWidth: 180 }}>
-          <img src={item.img} alt={item.name} style={{ maxWidth: 180, borderRadius: 8 }} />
-        </div>
-      )}
-      <div>
-        <h2 style={{ marginTop: 0 }}>{item.name}</h2>
-        {item.description && <p style={{ fontSize: 18 }}>{item.description}</p>}
-        {item.ingredients && (
-          <>
-            <h4>Ингредиенты:</h4>
-            <ul>
-              {item.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
-            </ul>
-          </>
-        )}
-      </div>
-    </div>
-  );
-}
-
 function Modal({ children, onClose }) {
   return (
     <div>
@@ -743,19 +708,6 @@ function DrinkInfoModal({ item, onClose }) {
         )}
       </div>
     </Modal>
-  );
-}
-
-function SeasonalMenu() {
-  return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 40 }}>
-      {seasonal.map((item, idx) => (
-        <div key={idx} style={{ textAlign: 'center' }}>
-          <img src={item.img} alt={item.name} style={{ width: 180, marginBottom: 8 }} />
-          <div>{item.name}<br />L — {item.price}</div>
-        </div>
-      ))}
-    </div>
   );
 }
 
