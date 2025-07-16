@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "A Coffee",
+  "name": "A Coffee - Меню кофейни",
+  "description": "Меню кофейни A Coffee - горячие и холодные напитки, завтраки, основные блюда",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FF4B00",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary"
 }
