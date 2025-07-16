@@ -79,6 +79,7 @@ main {
   background: #FF4B00;
   z-index: 10;
 }
+
 @media (max-width: 700px) {
   .menu-accent {
     width: 4px;
