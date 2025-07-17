@@ -66,7 +66,7 @@
 @media (max-width: 768px) {
   .drinks-table {
     max-width: 100%;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 16px auto;
     table-layout: fixed;
   }
   
@@ -122,6 +122,10 @@
 }
 
 @media (max-width: 480px) {
+  .drinks-table {
+    margin: 0 auto 12px auto;
+  }
+  
   .drinks-table td {
     padding: 10px 6px;
     font-size: 0.9rem;
