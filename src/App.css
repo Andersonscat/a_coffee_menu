@@ -58,6 +58,23 @@ main {
   margin-bottom: 40px;
 }
 
+/* Оранжевая полоска слева */
+.menu-accent {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100vh;
+  background: #FF4B00;
+  z-index: 10;
+}
+
+@media (max-width: 700px) {
+  .menu-accent {
+    width: 4px;
+  }
+}
+
 @media (max-width: 900px) {
   .sections-row {
     flex-direction: column;

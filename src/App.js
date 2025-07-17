@@ -463,6 +463,7 @@ function App() {
   const [selectedItem, setSelectedItem] = useState(null);
   return (
     <div className="App" style={{ background: '#fff' }}>
+      <div className="menu-accent" />
       <Header />
       <main>
         <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда"]}>
