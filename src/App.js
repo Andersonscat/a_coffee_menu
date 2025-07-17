@@ -45,10 +45,6 @@ const hotDrinks = [
   },
 ];
 
-const authorCoffee = [];
-
-const altCoffee = [];
-
 const authorTea = [
   {
     name: 'Чай',
@@ -107,10 +103,6 @@ const authorTea = [
     img: ''
   },
 ];
-
-const leafTea = [];
-
-const extras = [];
 
 const coldAuthor = [
   {
@@ -189,18 +181,6 @@ const coldRefresh = [
     img: ''
   },
 ];
-
-const cocktails = [];
-
-const smoothies = [];
-
-const breakfastBakery = [];
-
-const saladsSandwiches = [];
-
-const hotDishesFood = [];
-
-const sides = [];
 
 function Section({ title, children }) {
   return (
