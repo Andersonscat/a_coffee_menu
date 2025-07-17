@@ -63,7 +63,7 @@ main {
   position: fixed;
   left: 0;
   top: 0;
-  width: 8px;
+  width: 12px;
   height: 100vh;
   background: #FF4B00;
   z-index: 10;
@@ -71,7 +71,32 @@ main {
 
 @media (max-width: 700px) {
   .menu-accent {
-    width: 4px;
+    width: 8px;
+  }
+}
+
+/* Скрытие системного статус бара */
+@supports (padding: max(0px)) {
+  .App {
+    padding-top: max(0px, env(safe-area-inset-top));
+  }
+}
+
+/* Дополнительные стили для скрытия статус бара */
+@media screen and (max-width: 768px) {
+  .App {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
   }
 }
 
