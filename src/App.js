@@ -255,6 +255,148 @@ const hotDishesFood = [
   },
 ];
 
+const breakfastBakery = [
+  {
+    name: 'Континентальный завтрак',
+    price: 1500,
+    description: 'Классический европейский завтрак: круассан, масло, джем, сыр, свежие овощи и яйцо.',
+    ingredients: ['Круассан', 'Масло', 'Джем', 'Сыр', 'Овощи', 'Яйцо'],
+    img: ''
+  },
+  {
+    name: 'Американский завтрак',
+    price: 1600,
+    description: 'Яичница, бекон, тосты, картофель, овощи и соус.',
+    ingredients: ['Яйца', 'Бекон', 'Тосты', 'Картофель', 'Овощи', 'Соус'],
+    img: ''
+  },
+  {
+    name: 'Национальный завтрак',
+    price: 1400,
+    description: 'Традиционный завтрак с кашей, лепёшкой, сыром и яйцом.',
+    ingredients: ['Каша', 'Лепёшка', 'Сыр', 'Яйцо'],
+    img: ''
+  },
+  {
+    name: 'Блины со сметаной',
+    price: 900,
+    description: 'Тонкие блины, подаются со сметаной.',
+    ingredients: ['Мука', 'Яйца', 'Молоко', 'Сметана'],
+    img: ''
+  },
+  {
+    name: 'Блины с джемом',
+    price: 900,
+    description: 'Тонкие блины с фруктовым джемом.',
+    ingredients: ['Мука', 'Яйца', 'Молоко', 'Джем'],
+    img: ''
+  },
+  {
+    name: 'Блины с шоколадом',
+    price: 1000,
+    description: 'Блины с шоколадной начинкой.',
+    ingredients: ['Мука', 'Яйца', 'Молоко', 'Шоколад'],
+    img: ''
+  },
+  {
+    name: 'Круассан с семгой',
+    price: 1200,
+    description: 'Круассан с семгой, сливочным сыром и зеленью.',
+    ingredients: ['Круассан', 'Семга', 'Сливочный сыр', 'Зелень'],
+    img: ''
+  },
+  {
+    name: 'Круассан с курицей',
+    price: 1100,
+    description: 'Круассан с курицей, сыром и свежими овощами.',
+    ingredients: ['Круассан', 'Курица', 'Сыр', 'Овощи'],
+    img: ''
+  },
+  {
+    name: 'Панини',
+    price: 1200,
+    description: 'Итальянский горячий сэндвич с сыром и ветчиной.',
+    ingredients: ['Панини', 'Сыр', 'Ветчина'],
+    img: ''
+  },
+];
+
+const saladsSandwiches = [
+  {
+    name: 'Цезарь с курицей',
+    price: 2290,
+    description: 'Классический салат Цезарь с курицей, листьями салата, сухариками и соусом.',
+    ingredients: ['Курица', 'Салат', 'Сухарики', 'Пармезан', 'Соус Цезарь'],
+    img: ''
+  },
+  {
+    name: 'Цезарь с креветками',
+    price: 2390,
+    description: 'Салат Цезарь с креветками, листьями салата, сухариками и соусом.',
+    ingredients: ['Креветки', 'Салат', 'Сухарики', 'Пармезан', 'Соус Цезарь'],
+    img: ''
+  },
+  {
+    name: 'Хрустящие баклажаны',
+    price: 2100,
+    description: 'Жареные баклажаны с хрустящей корочкой и соусом.',
+    ingredients: ['Баклажаны', 'Панировка', 'Соус'],
+    img: ''
+  },
+  {
+    name: 'Греческий салат',
+    price: 1990,
+    description: 'Салат с овощами, фетой, оливками и оливковым маслом.',
+    ingredients: ['Огурцы', 'Помидоры', 'Фета', 'Оливки', 'Оливковое масло'],
+    img: ''
+  },
+  {
+    name: 'Классический сэндвич',
+    price: 1300,
+    description: 'Сэндвич с ветчиной, сыром и свежими овощами.',
+    ingredients: ['Хлеб', 'Ветчина', 'Сыр', 'Овощи'],
+    img: ''
+  },
+  {
+    name: 'Бургер',
+    price: 1500,
+    description: 'Классический бургер с котлетой, сыром и овощами.',
+    ingredients: ['Булочка', 'Котлета', 'Сыр', 'Овощи', 'Соус'],
+    img: ''
+  },
+  {
+    name: 'Наггетсы',
+    price: 1600,
+    description: 'Куриные наггетсы в хрустящей панировке.',
+    ingredients: ['Курица', 'Панировка', 'Соус'],
+    img: ''
+  },
+];
+
+const sides = [
+  {
+    name: 'Рис',
+    price: 600,
+    description: 'Гарнир из отварного риса.',
+    ingredients: ['Рис', 'Соль'],
+    img: ''
+  },
+  {
+    name: 'Пюре',
+    price: 700,
+    description: 'Картофельное пюре с маслом.',
+    ingredients: ['Картофель', 'Молоко', 'Масло', 'Соль'],
+    img: ''
+  },
+  {
+    name: 'Фри',
+    price: 990,
+    description: 'Картофель фри, обжаренный до хрустящей корочки.',
+    ingredients: ['Картофель', 'Масло', 'Соль'],
+    img: ''
+  },
+];
+
 function Section({ title, children }) {
   return (
     <div className="section">
@@ -349,8 +491,17 @@ function App() {
           </SectionsRow>
           {/* Основные блюда */}
           <SectionsRow>
+            <Section title="Завтраки и выпечка">
+              <DrinksTable data={breakfastBakery} setSelectedItem={setSelectedItem} />
+            </Section>
+            <Section title="Салаты и Сэндвичи">
+              <DrinksTable data={saladsSandwiches} setSelectedItem={setSelectedItem} />
+            </Section>
             <Section title="Горячие блюда">
               <DrinksTable data={hotDishesFood} setSelectedItem={setSelectedItem} />
+            </Section>
+            <Section title="Гарниры">
+              <DrinksTable data={sides} setSelectedItem={setSelectedItem} />
             </Section>
           </SectionsRow>
         </MenuTabs>
