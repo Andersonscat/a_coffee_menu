@@ -182,6 +182,79 @@ const coldRefresh = [
   },
 ];
 
+const hotDishesFood = [
+  {
+    name: 'Лапша рамен',
+    price: 1500,
+    description: 'Японская лапша рамен с бульоном, мясом и овощами.',
+    ingredients: ['Лапша', 'Бульон', 'Мясо', 'Овощи', 'Яйцо'],
+    img: ''
+  },
+  {
+    name: 'Пельмени',
+    price: 1400,
+    description: 'Пельмени с мясной начинкой, подаются со сметаной.',
+    ingredients: ['Тесто', 'Мясо', 'Сметана'],
+    img: ''
+  },
+  {
+    name: 'Куриная лапша',
+    price: 1200,
+    description: 'Куриная лапша с овощами в бульоне.',
+    ingredients: ['Лапша', 'Курица', 'Овощи', 'Бульон'],
+    img: ''
+  },
+  {
+    name: 'Чечевичный суп',
+    price: 1100,
+    description: 'Сытный суп из чечевицы с овощами.',
+    ingredients: ['Чечевица', 'Овощи', 'Бульон'],
+    img: ''
+  },
+  {
+    name: 'Феттучини с курицей',
+    price: 2290,
+    description: 'Итальянская паста феттучини с курицей и сливочным соусом.',
+    ingredients: ['Феттучини', 'Курица', 'Сливочный соус', 'Сыр'],
+    img: ''
+  },
+  {
+    name: 'Феттучини с креветками',
+    price: 2590,
+    description: 'Феттучини с креветками в сливочном соусе.',
+    ingredients: ['Феттучини', 'Креветки', 'Сливочный соус', 'Сыр'],
+    img: ''
+  },
+  {
+    name: 'Феттучини с семгой',
+    price: 2890,
+    description: 'Феттучини с семгой и сливочным соусом.',
+    ingredients: ['Феттучини', 'Семга', 'Сливочный соус', 'Сыр'],
+    img: ''
+  },
+  {
+    name: 'Вок лапша',
+    price: 1890,
+    description: 'Обжаренная лапша с овощами и мясом в азиатском стиле.',
+    ingredients: ['Лапша', 'Овощи', 'Мясо', 'Соус'],
+    img: ''
+  },
+  {
+    name: 'Бефстроганов',
+    price: 2390,
+    description: 'Говядина в сливочном соусе с грибами и луком.',
+    ingredients: ['Говядина', 'Сливки', 'Грибы', 'Лук'],
+    img: ''
+  },
+  {
+    name: 'Стейк из семги',
+    price: 3500,
+    description: 'Стейк из семги, обжаренный до золотистой корочки.',
+    ingredients: ['Семга', 'Специи', 'Лимон'],
+    img: ''
+  },
+];
+
 function Section({ title, children }) {
   return (
     <div className="section">
@@ -251,7 +324,7 @@ function App() {
       <div className="menu-accent" />
       <Header />
       <main>
-        <MenuTabs tabs={["Горячие напитки", "Холодные напитки"]}>
+        <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда"]}>
           {/* Горячие напитки */}
           <SectionsRow>
             <Section title="Классика">
@@ -272,6 +345,12 @@ function App() {
             )}
             <Section title="Прохладительные напитки">
               <DrinksTable data={coldRefresh} setSelectedItem={setSelectedItem} />
+            </Section>
+          </SectionsRow>
+          {/* Основные блюда */}
+          <SectionsRow>
+            <Section title="Горячие блюда">
+              <DrinksTable data={hotDishesFood} setSelectedItem={setSelectedItem} />
             </Section>
           </SectionsRow>
         </MenuTabs>
