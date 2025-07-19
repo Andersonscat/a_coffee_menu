@@ -15,9 +15,9 @@
 }
 
 .logo-image {
-  height: 60px;
+  height: 180px;
   width: auto;
-  max-width: 200px;
+  max-width: 600px;
 }
 
 .socials span {
@@ -34,8 +34,8 @@
   }
   
   .logo-image {
-    height: 50px;
-    max-width: 160px;
+    height: 150px;
+    max-width: 480px;
   }
 }
 
@@ -46,7 +46,7 @@
   }
   
   .logo-image {
-    height: 45px;
-    max-width: 140px;
+    height: 135px;
+    max-width: 420px;
   }
 } 
