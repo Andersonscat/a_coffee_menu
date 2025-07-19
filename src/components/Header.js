@@ -4,7 +4,7 @@ import './Header.css';
 export default function Header() {
   return (
     <header className="header">
-      <div className="plain-logo">A Coffee</div>
+      <div className="plain-logo">A'coffee</div>
     </header>
   );
 } 
