@@ -4,7 +4,9 @@ import './Header.css';
 export default function Header() {
   return (
     <header className="header">
-      <div className="plain-logo">A'coffee</div>
+      <div className="logo">
+        <img src="/logo.png" alt="A'coffee" className="logo-image" />
+      </div>
     </header>
   );
 } 
