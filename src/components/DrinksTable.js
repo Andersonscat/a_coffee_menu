@@ -18,8 +18,8 @@ export default function DrinksTable({ data, setSelectedItem }) {
                     {item.name} {item.isNew && <span className="new">NEW</span>}
                   </td>
                 )}
-                <td>{s.size}</td>
-                <td>{s.price}</td>
+                <td>{s.size || '-'}</td>
+                <td>{s.price || '-'}</td>
               </tr>
             ))
           ) : (
@@ -31,8 +31,8 @@ export default function DrinksTable({ data, setSelectedItem }) {
               <td>
                 {item.name} {item.isNew && <span className="new">NEW</span>}
               </td>
-              <td>{item.size}</td>
-              <td>{item.price}</td>
+              <td>{item.size || '-'}</td>
+              <td>{item.price || '-'}</td>
             </tr>
           )
         ))}
