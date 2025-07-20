@@ -60,7 +60,7 @@ const authorTea = [
     price: 350,
     description: 'Черный чай с добавлением молока.',
     ingredients: ['Черный чай', 'Молоко', 'Вода'],
-    img: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop'
+    img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай черный чайник',
@@ -76,7 +76,7 @@ const authorTea = [
     price: 900,
     description: 'Чай с молоком в чайнике для компании.',
     ingredients: ['Черный чай', 'Молоко', 'Вода'],
-    img: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop'
+    img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай ягодный',
@@ -508,9 +508,7 @@ function DrinkInfoModal({ item, onClose }) {
         {item.ingredients && (
           <>
             <h4 style={{ margin: '12px 0 4px 0', fontWeight: 400, fontSize: 18, color: '#333' }}>Ингредиенты:</h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: 15, color: '#444' }}>
-              {item.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
-            </ul>
+            <p style={{ fontSize: 15, color: '#444', margin: '8px 0 0 0' }}>{item.ingredients.join(', ')}</p>
           </>
         )}
       </div>
