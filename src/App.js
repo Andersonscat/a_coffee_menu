@@ -400,72 +400,58 @@ const sides = [
 const extras = [
   {
     name: 'Овсяное молоко',
-    price: 200,
+    price: 500,
     description: 'Альтернативное молоко из овса.',
     ingredients: ['Овсяное молоко'],
     img: ''
   },
   {
     name: 'Миндальное молоко',
-    price: 200,
+    price: 500,
     description: 'Альтернативное молоко из миндаля.',
     ingredients: ['Миндальное молоко'],
     img: ''
   },
   {
     name: 'Кокосовое молоко',
-    price: 200,
+    price: 500,
     description: 'Альтернативное молоко из кокоса.',
     ingredients: ['Кокосовое молоко'],
     img: ''
   },
   {
     name: 'Соевое молоко',
-    price: 200,
+    price: 500,
     description: 'Альтернативное молоко из сои.',
     ingredients: ['Соевое молоко'],
     img: ''
   },
   {
     name: 'Ванильный сироп',
-    price: 150,
+    price: 200,
     description: 'Сладкий ванильный сироп.',
     ingredients: ['Ванильный сироп'],
     img: ''
   },
   {
     name: 'Карамельный сироп',
-    price: 150,
+    price: 200,
     description: 'Сладкий карамельный сироп.',
     ingredients: ['Карамельный сироп'],
     img: ''
   },
   {
     name: 'Шоколадный сироп',
-    price: 150,
+    price: 200,
     description: 'Сладкий шоколадный сироп.',
     ingredients: ['Шоколадный сироп'],
     img: ''
   },
   {
     name: 'Кленовый сироп',
-    price: 150,
+    price: 200,
     description: 'Натуральный кленовый сироп.',
     ingredients: ['Кленовый сироп'],
-    img: ''
-  },
-  {
-    name: 'Мятный сироп',
-    price: 150,
-    description: 'Освежающий мятный сироп.',
-    ingredients: ['Мятный сироп'],
-    img: ''
-  },
-  {
-    name: 'Клубничный сироп',
-    price: 150,
-    description: 'Сладкий клубничный сироп.',
-    ingredients: ['Клубничный сироп'],
     img: ''
   },
 ];
