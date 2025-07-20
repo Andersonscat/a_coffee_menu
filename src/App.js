@@ -10,7 +10,7 @@ const hotDrinks = [
     sizes: [{ size: '-', price: 650 }],
     description: 'Крепкий итальянский кофе, подается в маленькой чашке.',
     ingredients: ['Молотый кофе', 'Вода'],
-    img: 'https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG'
+    img: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop'
   },
   {
     name: 'Американо',
@@ -20,7 +20,7 @@ const hotDrinks = [
     ],
     description: 'Классический американо — эспрессо, разбавленный горячей водой.',
     ingredients: ['Эспрессо', 'Горячая вода'],
-    img: 'https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG'
+    img: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop'
   },
   {
     name: 'Капучино',
@@ -31,7 +31,7 @@ const hotDrinks = [
     ],
     description: 'Итальянский кофе с молоком и пышной молочной пеной.',
     ingredients: ['Эспрессо', 'Молоко', 'Молочная пена'],
-    img: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg'
+    img: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop'
   },
   {
     name: 'Латте',
@@ -41,7 +41,7 @@ const hotDrinks = [
     ],
     description: 'Мягкий кофейный напиток с большим количеством молока.',
     ingredients: ['Эспрессо', 'Молоко', 'Молочная пена'],
-    img: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Latte_art_3.jpg'
+    img: 'https://images.unsplash.com/photo-1561043433-9265f73e685f?w=400&h=300&fit=crop'
   },
 ];
 
@@ -52,7 +52,7 @@ const authorTea = [
     price: 300,
     description: 'Классический черный чай.',
     ingredients: ['Черный чай', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай с молоком',
@@ -60,7 +60,7 @@ const authorTea = [
     price: 350,
     description: 'Черный чай с добавлением молока.',
     ingredients: ['Черный чай', 'Молоко', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай черный чайник',
@@ -68,7 +68,7 @@ const authorTea = [
     price: 900,
     description: 'Черный чай в чайнике для компании.',
     ingredients: ['Черный чай', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай с молоком чайник',
@@ -76,7 +76,7 @@ const authorTea = [
     price: 900,
     description: 'Чай с молоком в чайнике для компании.',
     ingredients: ['Черный чай', 'Молоко', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай ягодный',
@@ -84,7 +84,7 @@ const authorTea = [
     price: 1900,
     description: 'Ароматный ягодный чай с натуральными ягодами.',
     ingredients: ['Черный чай', 'Ягоды', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай облепиховый',
@@ -92,7 +92,7 @@ const authorTea = [
     price: 1900,
     description: 'Полезный облепиховый чай с витаминами.',
     ingredients: ['Черный чай', 'Облепиха', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
   },
   {
     name: 'Чай ташкентский',
@@ -100,7 +100,7 @@ const authorTea = [
     price: 1900,
     description: 'Традиционный ташкентский чай с особым вкусом.',
     ingredients: ['Черный чай', 'Специи', 'Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop'
   },
 ];
 
@@ -111,7 +111,7 @@ const coldAuthor = [
     price: 950,
     description: 'Латте или капучино, приготовленный на льду.',
     ingredients: ['Эспрессо', 'Молоко', 'Лёд'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop'
   },
 ];
 
@@ -122,7 +122,7 @@ const coldRefresh = [
     price: 700,
     description: 'Кока-кола объемом 0.5 литра.',
     ingredients: ['Кола', 'Лёд'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=300&fit=crop'
   },
   {
     name: 'Фанта 0.5',
@@ -130,7 +130,7 @@ const coldRefresh = [
     price: 700,
     description: 'Фанта объемом 0.5 литра.',
     ingredients: ['Фанта', 'Лёд'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=300&fit=crop'
   },
   {
     name: 'Редбул',
@@ -138,7 +138,7 @@ const coldRefresh = [
     price: 1100,
     description: 'Энергетический напиток Red Bull.',
     ingredients: ['Red Bull'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop'
   },
   {
     name: 'Горилла',
@@ -146,7 +146,7 @@ const coldRefresh = [
     price: 700,
     description: 'Энергетический напиток Gorilla.',
     ingredients: ['Gorilla'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop'
   },
   {
     name: 'Вода',
@@ -154,7 +154,7 @@ const coldRefresh = [
     price: 450,
     description: 'Питьевая вода.',
     ingredients: ['Вода'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop'
   },
   {
     name: 'Детский сок',
@@ -162,7 +162,7 @@ const coldRefresh = [
     price: 350,
     description: 'Натуральный сок для детей.',
     ingredients: ['Сок'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop'
   },
   {
     name: 'Лимонад 0.5',
@@ -170,7 +170,7 @@ const coldRefresh = [
     price: 950,
     description: 'Домашний лимонад объемом 0.5 литра.',
     ingredients: ['Лимон', 'Сахар', 'Вода', 'Лёд'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&h=300&fit=crop'
   },
   {
     name: 'Лимонад 1 л',
@@ -178,7 +178,7 @@ const coldRefresh = [
     price: 2500,
     description: 'Домашний лимонад объемом 1 литр.',
     ingredients: ['Лимон', 'Сахар', 'Вода', 'Лёд'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&h=300&fit=crop'
   },
 ];
 
@@ -188,70 +188,70 @@ const hotDishesFood = [
     price: 1500,
     description: 'Японская лапша рамен с бульоном, мясом и овощами.',
     ingredients: ['Лапша', 'Бульон', 'Мясо', 'Овощи', 'Яйцо'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop'
   },
   {
     name: 'Пельмени',
     price: 1400,
     description: 'Пельмени с мясной начинкой, подаются со сметаной.',
     ingredients: ['Тесто', 'Мясо', 'Сметана'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop'
   },
   {
     name: 'Куриная лапша',
     price: 1200,
     description: 'Куриная лапша с овощами в бульоне.',
     ingredients: ['Лапша', 'Курица', 'Овощи', 'Бульон'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop'
   },
   {
     name: 'Чечевичный суп',
     price: 1100,
     description: 'Сытный суп из чечевицы с овощами.',
     ingredients: ['Чечевица', 'Овощи', 'Бульон'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop'
   },
   {
     name: 'Феттучини с курицей',
     price: 2290,
     description: 'Итальянская паста феттучини с курицей и сливочным соусом.',
     ingredients: ['Феттучини', 'Курица', 'Сливочный соус', 'Сыр'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop'
   },
   {
     name: 'Феттучини с креветками',
     price: 2590,
     description: 'Феттучини с креветками в сливочном соусе.',
     ingredients: ['Феттучини', 'Креветки', 'Сливочный соус', 'Сыр'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop'
   },
   {
     name: 'Феттучини с семгой',
     price: 2890,
     description: 'Феттучини с семгой и сливочным соусом.',
     ingredients: ['Феттучини', 'Семга', 'Сливочный соус', 'Сыр'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop'
   },
   {
     name: 'Вок лапша',
     price: 1890,
     description: 'Обжаренная лапша с овощами и мясом в азиатском стиле.',
     ingredients: ['Лапша', 'Овощи', 'Мясо', 'Соус'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop'
   },
   {
     name: 'Бефстроганов',
     price: 2390,
     description: 'Говядина в сливочном соусе с грибами и луком.',
     ingredients: ['Говядина', 'Сливки', 'Грибы', 'Лук'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop'
   },
   {
     name: 'Стейк из семги',
     price: 3500,
     description: 'Стейк из семги, обжаренный до золотистой корочки.',
     ingredients: ['Семга', 'Специи', 'Лимон'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop'
   },
 ];
 
@@ -261,63 +261,63 @@ const breakfastBakery = [
     price: 1500,
     description: 'Классический европейский завтрак: круассан, масло, джем, сыр, свежие овощи и яйцо.',
     ingredients: ['Круассан', 'Масло', 'Джем', 'Сыр', 'Овощи', 'Яйцо'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?w=400&h=300&fit=crop'
   },
   {
     name: 'Американский завтрак',
     price: 1600,
     description: 'Яичница, бекон, тосты, картофель, овощи и соус.',
     ingredients: ['Яйца', 'Бекон', 'Тосты', 'Картофель', 'Овощи', 'Соус'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop'
   },
   {
     name: 'Национальный завтрак',
     price: 1400,
     description: 'Традиционный завтрак с кашей, лепёшкой, сыром и яйцом.',
     ingredients: ['Каша', 'Лепёшка', 'Сыр', 'Яйцо'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?w=400&h=300&fit=crop'
   },
   {
     name: 'Блины со сметаной',
     price: 900,
     description: 'Тонкие блины, подаются со сметаной.',
     ingredients: ['Мука', 'Яйца', 'Молоко', 'Сметана'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop'
   },
   {
     name: 'Блины с джемом',
     price: 900,
     description: 'Тонкие блины с фруктовым джемом.',
     ingredients: ['Мука', 'Яйца', 'Молоко', 'Джем'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop'
   },
   {
     name: 'Блины с шоколадом',
     price: 1000,
     description: 'Блины с шоколадной начинкой.',
     ingredients: ['Мука', 'Яйца', 'Молоко', 'Шоколад'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop'
   },
   {
     name: 'Круассан с семгой',
     price: 1200,
     description: 'Круассан с семгой, сливочным сыром и зеленью.',
     ingredients: ['Круассан', 'Семга', 'Сливочный сыр', 'Зелень'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop'
   },
   {
     name: 'Круассан с курицей',
     price: 1100,
     description: 'Круассан с курицей, сыром и свежими овощами.',
     ingredients: ['Круассан', 'Курица', 'Сыр', 'Овощи'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop'
   },
   {
     name: 'Панини',
     price: 1200,
     description: 'Итальянский горячий сэндвич с сыром и ветчиной.',
     ingredients: ['Панини', 'Сыр', 'Ветчина'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
   },
 ];
 
@@ -327,49 +327,49 @@ const saladsSandwiches = [
     price: 2290,
     description: 'Классический салат Цезарь с курицей, листьями салата, сухариками и соусом.',
     ingredients: ['Курица', 'Салат', 'Сухарики', 'Пармезан', 'Соус Цезарь'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop'
   },
   {
     name: 'Цезарь с креветками',
     price: 2390,
     description: 'Салат Цезарь с креветками, листьями салата, сухариками и соусом.',
     ingredients: ['Креветки', 'Салат', 'Сухарики', 'Пармезан', 'Соус Цезарь'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop'
   },
   {
     name: 'Хрустящие баклажаны',
     price: 2100,
     description: 'Жареные баклажаны с хрустящей корочкой и соусом.',
     ingredients: ['Баклажаны', 'Панировка', 'Соус'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop'
   },
   {
     name: 'Греческий салат',
     price: 1990,
     description: 'Салат с овощами, фетой, оливками и оливковым маслом.',
     ingredients: ['Огурцы', 'Помидоры', 'Фета', 'Оливки', 'Оливковое масло'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop'
   },
   {
     name: 'Классический сэндвич',
     price: 1300,
     description: 'Сэндвич с ветчиной, сыром и свежими овощами.',
     ingredients: ['Хлеб', 'Ветчина', 'Сыр', 'Овощи'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
   },
   {
     name: 'Бургер',
     price: 1500,
     description: 'Классический бургер с котлетой, сыром и овощами.',
     ingredients: ['Булочка', 'Котлета', 'Сыр', 'Овощи', 'Соус'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop'
   },
   {
     name: 'Наггетсы',
     price: 1600,
     description: 'Куриные наггетсы в хрустящей панировке.',
     ingredients: ['Курица', 'Панировка', 'Соус'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop'
   },
 ];
 
@@ -379,21 +379,21 @@ const sides = [
     price: 600,
     description: 'Гарнир из отварного риса.',
     ingredients: ['Рис', 'Соль'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop'
   },
   {
     name: 'Пюре',
     price: 700,
     description: 'Картофельное пюре с маслом.',
     ingredients: ['Картофель', 'Молоко', 'Масло', 'Соль'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=400&h=300&fit=crop'
   },
   {
     name: 'Фри',
     price: 990,
     description: 'Картофель фри, обжаренный до хрустящей корочки.',
     ingredients: ['Картофель', 'Масло', 'Соль'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop'
   },
 ];
 
@@ -403,56 +403,56 @@ const extras = [
     price: 500,
     description: 'Альтернативное молоко из овса.',
     ingredients: ['Овсяное молоко'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=300&fit=crop'
   },
   {
     name: 'Миндальное молоко',
     price: 500,
     description: 'Альтернативное молоко из миндаля.',
     ingredients: ['Миндальное молоко'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=300&fit=crop'
   },
   {
     name: 'Кокосовое молоко',
     price: 500,
     description: 'Альтернативное молоко из кокоса.',
     ingredients: ['Кокосовое молоко'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=300&fit=crop'
   },
   {
     name: 'Соевое молоко',
     price: 500,
     description: 'Альтернативное молоко из сои.',
     ingredients: ['Соевое молоко'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=300&fit=crop'
   },
   {
     name: 'Ванильный сироп',
     price: 200,
     description: 'Сладкий ванильный сироп.',
     ingredients: ['Ванильный сироп'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
   },
   {
     name: 'Карамельный сироп',
     price: 200,
     description: 'Сладкий карамельный сироп.',
     ingredients: ['Карамельный сироп'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
   },
   {
     name: 'Шоколадный сироп',
     price: 200,
     description: 'Сладкий шоколадный сироп.',
     ingredients: ['Шоколадный сироп'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
   },
   {
     name: 'Кленовый сироп',
     price: 200,
     description: 'Натуральный кленовый сироп.',
     ingredients: ['Кленовый сироп'],
-    img: ''
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
   },
 ];
 
