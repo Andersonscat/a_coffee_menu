@@ -48,14 +48,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 24px;
 }
 
 .section {
   flex: 1 1 400px;
   max-width: 500px;
   min-width: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 /* Оранжевая полоска слева */
@@ -104,7 +104,7 @@ main {
   .sections-row {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
   }
   .section {
     max-width: 100%;
