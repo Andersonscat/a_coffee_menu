@@ -12,7 +12,7 @@ export default function MenuTabs({ tabs, children }) {
             className={active === i ? 'active' : ''}
             onClick={() => setActive(i)}
           >
-            {tab}
+            {tab.toUpperCase()}
           </button>
         ))}
       </div>
