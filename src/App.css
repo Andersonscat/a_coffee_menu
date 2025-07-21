@@ -60,19 +60,7 @@ main {
 
 /* Оранжевая полоска слева */
 .menu-accent {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 100vh;
-  background: #FF4B00;
-  z-index: 10;
-}
-
-@media (max-width: 700px) {
-  .menu-accent {
-    display: none;
-  }
+  display: none;
 }
 
 /* Скрытие системного статус бара */
@@ -158,16 +146,17 @@ main {
 @media (max-width: 768px) {
   main {
     padding: 0 12px;
+    margin-top: -8px;
   }
   
   .sections-row {
-    gap: 20px;
+    gap: 16px;
     flex-direction: column;
     align-items: center;
   }
   
   .section {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 100%;
     min-width: 0;
@@ -176,7 +165,7 @@ main {
   
   .section h2 {
     font-size: 20px !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 14px !important;
     letter-spacing: 0.5px !important;
   }
   
@@ -199,14 +188,15 @@ main {
 @media (max-width: 480px) {
   main {
     padding: 0 8px;
+    margin-top: -12px;
   }
   
   .sections-row {
-    gap: 16px;
+    gap: 14px;
   }
   
   .section {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     width: 100%;
     max-width: 100%;
     flex: 0 0 100%;
@@ -214,7 +204,7 @@ main {
   
   .section h2 {
     font-size: 18px !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 12px !important;
     letter-spacing: 0.3px !important;
   }
   

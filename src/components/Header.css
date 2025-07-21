@@ -29,8 +29,8 @@
 @media (max-width: 768px) {
   .header {
     justify-content: center;
-    padding: 20px 16px;
-    margin-bottom: 16px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
   }
   
   .header::before {
@@ -46,8 +46,8 @@
 
 @media (max-width: 480px) {
   .header {
-    padding: 16px 12px;
-    margin-bottom: 12px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
   }
   
   .header::before {
