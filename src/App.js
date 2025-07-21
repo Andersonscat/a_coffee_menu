@@ -188,7 +188,7 @@ const hotDishesFood = [
     price: 1500,
     description: 'Японская лапша рамен с бульоном, мясом и овощами.',
     ingredients: ['Лапша', 'Бульон', 'Мясо', 'Овощи', 'Яйцо'],
-    img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop'
+    img: 'https://images.unsplash.com/photo-1557872943-5a8ac4ddc8c9?w=400&h=300&fit=crop'
   },
   {
     name: 'Пельмени',
@@ -202,7 +202,7 @@ const hotDishesFood = [
     price: 1200,
     description: 'Куриная лапша с овощами в бульоне.',
     ingredients: ['Лапша', 'Курица', 'Овощи', 'Бульон'],
-    img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop'
+    img: 'https://images.unsplash.com/photo-1557872943-5a8ac4ddc8c9?w=400&h=300&fit=crop'
   },
   {
     name: 'Чечевичный суп',
@@ -237,7 +237,7 @@ const hotDishesFood = [
     price: 1890,
     description: 'Обжаренная лапша с овощами и мясом в азиатском стиле.',
     ingredients: ['Лапша', 'Овощи', 'Мясо', 'Соус'],
-    img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop'
+    img: 'https://images.unsplash.com/photo-1557872943-5a8ac4ddc8c9?w=400&h=300&fit=crop'
   },
   {
     name: 'Бефстроганов',
