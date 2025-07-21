@@ -75,16 +75,29 @@ main {
   .App {
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    background: #fff;
   }
   
   html {
     height: -webkit-fill-available;
+    background: #fff;
   }
   
   body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
     overflow-x: hidden;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Скрытие статус бара */
+  @supports (-webkit-touch-callout: none) {
+    .App {
+      padding-top: env(safe-area-inset-top);
+      background: #fff;
+    }
   }
 }
 
