@@ -65,7 +65,7 @@
 /* Мобильная версия */
 @media (max-width: 768px) {
   .drinks-table {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto 20px auto;
     table-layout: fixed;
     border-radius: 8px;
@@ -79,7 +79,7 @@
     overflow-wrap: break-word;
     hyphens: auto;
     line-height: 1.4;
-    border: 1px solid rgba(230, 57, 0, 0.12);
+    border: 1px solid #d6cfc7;
   }
   
   .drinks-table td:first-child {
@@ -103,7 +103,7 @@
     padding-left: 8px;
     padding-right: 14px;
     font-weight: 600;
-    color: #E63900;
+    color: #222;
   }
   
   .drinks-table .new {
@@ -130,6 +130,7 @@
 
 @media (max-width: 480px) {
   .drinks-table {
+    max-width: 85%;
     margin: 0 auto 16px auto;
     border-radius: 6px;
   }

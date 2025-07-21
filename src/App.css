@@ -71,7 +71,7 @@ main {
 
 @media (max-width: 700px) {
   .menu-accent {
-    width: 8px;
+    display: none;
   }
 }
 
