@@ -459,7 +459,7 @@ const extras = [
 function Section({ title, children }) {
   return (
     <div className="section">
-      <h2 style={{ textAlign: 'left', fontWeight: 600, fontSize: 32, letterSpacing: 1, color: '#E63900', marginLeft: '8px' }}>{title}</h2>
+      <h2 style={{ textAlign: 'left', fontWeight: 600, fontSize: 32, letterSpacing: 1, color: '#E63900', marginLeft: '16px' }}>{title}</h2>
       {children}
     </div>
   );
