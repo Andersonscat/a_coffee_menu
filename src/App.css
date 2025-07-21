@@ -261,13 +261,13 @@ main {
   .section-title {
     font-size: 28px;
     margin: 0 0 10px 0;
-    padding-left: 0;
+    padding-left: 12px;
   }
 }
 @media (max-width: 480px) {
   .section-title {
     font-size: 32px;
     margin: 0 0 8px 0;
-    padding-left: 0;
+    padding-left: 8px;
   }
 }
