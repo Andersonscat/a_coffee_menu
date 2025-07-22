@@ -9,11 +9,11 @@
   gap: 40px;
   margin-bottom: 40px;
   padding: 20px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 246, 242, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 246, 242, 0.9) 100%);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(45, 24, 16, 0.08);
+  box-shadow: 0 4px 20px rgba(45, 24, 16, 0.08);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(212, 165, 116, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.1);
 }
 
 .tab-list button {
@@ -27,42 +27,20 @@
   cursor: pointer;
   padding: 12px 20px;
   border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
-}
-
-.tab-list button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #ff6b35 0%, #e63900 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 12px;
 }
 
 .tab-list button:hover {
   color: #2d1810;
-  transform: translateY(-2px);
-}
-
-.tab-list button:hover::before {
-  opacity: 0.1;
+  transform: translateY(-1px);
 }
 
 .tab-list button.active {
   color: #2d1810;
-  background: linear-gradient(135deg, #ff6b35 0%, #e63900 100%);
-  box-shadow: 0 4px 16px rgba(230, 57, 0, 0.3);
-  transform: translateY(-2px);
-}
-
-.tab-list button.active::before {
-  opacity: 0;
+  background: #ff6b35;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.2);
+  transform: translateY(-1px);
 }
 
 .tab-content {
