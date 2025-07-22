@@ -5,6 +5,24 @@
   margin: 0 auto 40px auto;
   max-width: 600px;
   table-layout: fixed;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.drinks-table:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.drinks-table tr {
+  transition: background-color 0.2s ease;
+}
+
+.drinks-table tr:hover {
+  background-color: rgba(230, 57, 0, 0.03);
 }
 
 .drinks-table td {

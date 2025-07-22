@@ -271,3 +271,26 @@ main {
     padding-left: 8px;
   }
 }
+
+.section-hint {
+  text-align: left;
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 8px 0;
+  font-style: italic;
+  padding-left: 12px;
+}
+
+@media (max-width: 768px) {
+  .section-hint {
+    font-size: 13px;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-hint {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+}
