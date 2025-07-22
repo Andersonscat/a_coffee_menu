@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import MenuTabs from './components/MenuTabs';
 import DrinksTable from './components/DrinksTable';
+import ImageGallery from './components/ImageGallery';
 import './App.css';
 
 const hotDrinks = [
@@ -454,6 +455,32 @@ const extras = [
   },
 ];
 
+// Пример данных для галереи номеров
+const hotelRooms = [
+  {
+    name: 'Standard Room',
+    description: 'Comfortable and modern room with all essential amenities.',
+    price: 'from $180',
+    features: ['Queen Bed', 'City View', 'Free WiFi'],
+    images: [
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800',
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800'
+    ]
+  },
+  {
+    name: 'Deluxe Suite',
+    description: 'Spacious suite with premium amenities and stunning views.',
+    price: 'from $320',
+    features: ['King Bed', 'Mountain View', 'Balcony', 'Free WiFi'],
+    images: [
+      'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800',
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800'
+    ]
+  }
+];
+
 function Section({ title, children }) {
   return (
     <div className="section">
@@ -522,7 +549,7 @@ function App() {
       <div className="menu-accent" />
       <Header />
       <main>
-        <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда"]}>
+        <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда", "Номера"]}>
           {/* Горячие напитки */}
           <SectionsRow>
             <Section title="Классика">
@@ -561,6 +588,31 @@ function App() {
             </Section>
             <Section title="Гарниры">
               <DrinksTable data={sides} setSelectedItem={setSelectedItem} />
+            </Section>
+          </SectionsRow>
+          {/* Номера отеля */}
+          <SectionsRow>
+            <Section title="Rooms & Suites">
+              <div className="rooms-container">
+                {hotelRooms.map((room, index) => (
+                  <div key={index} className="room-card">
+                    <div className="room-image">
+                      <ImageGallery images={room.images} title={room.name} />
+                    </div>
+                    <div className="room-details">
+                      <h3 className="room-name">{room.name}</h3>
+                      <p className="room-description">{room.description}</p>
+                      <div className="room-features">
+                        {room.features.map((feature, idx) => (
+                          <span key={idx} className="room-feature">{feature}</span>
+                        ))}
+                      </div>
+                      <div className="room-price">{room.price}</div>
+                      <button className="room-book-btn">BOOK NOW</button>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </Section>
           </SectionsRow>
         </MenuTabs>
