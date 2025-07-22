@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #d4a574 0%, #b8860b 100%);
+  background: linear-gradient(90deg, #ff6b35 0%, #e63900 100%);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -32,7 +32,7 @@
 .drink-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(45, 24, 16, 0.12);
-  border-color: rgba(212, 165, 116, 0.2);
+  border-color: rgba(255, 107, 53, 0.2);
 }
 
 .drink-card:hover::before {
@@ -57,12 +57,12 @@
 .drink-price {
   font-size: 20px;
   font-weight: 700;
-  color: #b8860b;
+  color: #e63900;
   margin: 0;
   background: linear-gradient(135deg, #f8f6f2 0%, #f5f1eb 100%);
   padding: 6px 12px;
   border-radius: 8px;
-  border: 1px solid rgba(184, 134, 11, 0.2);
+  border: 1px solid rgba(230, 57, 0, 0.2);
 }
 
 .drink-details-row {
@@ -76,7 +76,7 @@
   font-size: 14px;
   color: #8b7355;
   font-weight: 500;
-  background: rgba(212, 165, 116, 0.1);
+  background: rgba(255, 107, 53, 0.1);
   padding: 4px 8px;
   border-radius: 6px;
 }
