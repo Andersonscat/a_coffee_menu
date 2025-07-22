@@ -3,40 +3,50 @@ import './DrinksTable.css';
 
 export default function DrinksTable({ data, setSelectedItem }) {
   return (
-    <table className="drinks-table">
-      <tbody>
-        {data.map((item, idx) => (
-          item.sizes ? (
-            item.sizes.map((s, i) => (
-              <tr
-                key={idx + '-' + i}
-                style={{ cursor: item.ingredients || item.img || item.description ? 'pointer' : 'default' }}
-                onClick={() => (item.ingredients || item.img || item.description) && setSelectedItem(item)}
-              >
-                {i === 0 && (
-                  <td rowSpan={item.sizes.length}>
-                    {item.name} {item.isNew && <span className="new">NEW</span>}
-                  </td>
-                )}
-                <td>{s.size || '-'}</td>
-                <td>{s.price || '-'}</td>
-              </tr>
-            ))
-          ) : (
-            <tr
-              key={idx}
-              style={{ cursor: item.ingredients || item.img || item.description ? 'pointer' : 'default' }}
+    <div className="drinks-table">
+      {data.map((item, idx) => (
+        item.sizes ? (
+          item.sizes.map((s, i) => (
+            <div
+              key={idx + '-' + i}
+              className="drink-card"
               onClick={() => (item.ingredients || item.img || item.description) && setSelectedItem(item)}
             >
-              <td>
-                {item.name} {item.isNew && <span className="new">NEW</span>}
-              </td>
-              <td>{item.size || '-'}</td>
-              <td>{item.price || '-'}</td>
-            </tr>
-          )
-        ))}
-      </tbody>
-    </table>
+              <div className="drink-header">
+                <h3 className="drink-name">
+                  {item.name} {item.isNew && <span className="drink-new">NEW</span>}
+                </h3>
+                <div className="drink-price">{s.price || '-'} ₸</div>
+              </div>
+              <div className="drink-details-row">
+                <span className="drink-size">Размер: {s.size || '-'}</span>
+              </div>
+              {item.description && (
+                <p className="drink-description">{item.description}</p>
+              )}
+            </div>
+          ))
+        ) : (
+          <div
+            key={idx}
+            className="drink-card"
+            onClick={() => (item.ingredients || item.img || item.description) && setSelectedItem(item)}
+          >
+            <div className="drink-header">
+              <h3 className="drink-name">
+                {item.name} {item.isNew && <span className="drink-new">NEW</span>}
+              </h3>
+              <div className="drink-price">{item.price || '-'} ₸</div>
+            </div>
+            <div className="drink-details-row">
+              <span className="drink-size">Размер: {item.size || '-'}</span>
+            </div>
+            {item.description && (
+              <p className="drink-description">{item.description}</p>
+            )}
+          </div>
+        )
+      ))}
+    </div>
   );
 } 

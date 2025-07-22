@@ -4,20 +4,44 @@
   justify-content: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px 0 24px 160px;
-  font-family: 'Fira Mono', monospace;
-  margin-bottom: 16px;
+  padding: 32px 0 32px 160px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 246, 242, 0.9) 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(45, 24, 16, 0.08);
+  backdrop-filter: blur(10px);
+  z-index: -1;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-image {
   height: 180px;
   width: auto;
   max-width: 600px;
+  filter: drop-shadow(0 4px 12px rgba(45, 24, 16, 0.1));
+  transition: all 0.3s ease;
+}
+
+.logo-image:hover {
+  filter: drop-shadow(0 6px 20px rgba(45, 24, 16, 0.15));
+  transform: scale(1.02);
 }
 
 .socials span {
