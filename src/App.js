@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import MenuTabs from './components/MenuTabs';
 import DrinksTable from './components/DrinksTable';
-import ImageGallery from './components/ImageGallery';
 import './App.css';
 
 const hotDrinks = [
@@ -549,7 +548,7 @@ function App() {
       <div className="menu-accent" />
       <Header />
       <main>
-        <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда", "Номера"]}>
+        <MenuTabs tabs={["Горячие напитки", "Холодные напитки", "Основные блюда"]}>
           {/* Горячие напитки */}
           <SectionsRow>
             <Section title="Классика">
@@ -588,31 +587,6 @@ function App() {
             </Section>
             <Section title="Гарниры">
               <DrinksTable data={sides} setSelectedItem={setSelectedItem} />
-            </Section>
-          </SectionsRow>
-          {/* Номера отеля */}
-          <SectionsRow>
-            <Section title="Rooms & Suites">
-              <div className="rooms-container">
-                {hotelRooms.map((room, index) => (
-                  <div key={index} className="room-card">
-                    <div className="room-image">
-                      <ImageGallery images={room.images} title={room.name} />
-                    </div>
-                    <div className="room-details">
-                      <h3 className="room-name">{room.name}</h3>
-                      <p className="room-description">{room.description}</p>
-                      <div className="room-features">
-                        {room.features.map((feature, idx) => (
-                          <span key={idx} className="room-feature">{feature}</span>
-                        ))}
-                      </div>
-                      <div className="room-price">{room.price}</div>
-                      <button className="room-book-btn">BOOK NOW</button>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </Section>
           </SectionsRow>
         </MenuTabs>
