@@ -21,14 +21,16 @@ export default function DrinksTable({ data, setSelectedItem }) {
               }
             </div>
           </div>
-          <div className="drink-details-row">
-            <span className="drink-size">
-              {item.sizes ? 
-                'Размер: ' + item.sizes.map(s => s.size || '-').join(' / ') : 
-                'Размер: ' + (item.size || '-')
-              }
-            </span>
-          </div>
+          {item.sizes && (
+            <div className="drink-details-row">
+              <span className="drink-size">
+                {item.sizes ? 
+                  'Размер: ' + item.sizes.map(s => s.size || '-').join(' / ') : 
+                  'Размер: ' + (item.size || '-')
+                }
+              </span>
+            </div>
+          )}
           {item.description && (
             <p className="drink-description">{item.description}</p>
           )}
