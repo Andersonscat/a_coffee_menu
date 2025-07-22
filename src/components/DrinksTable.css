@@ -10,7 +10,7 @@
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(45, 24, 16, 0.08);
-  border: 1px solid rgba(212, 165, 116, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.1);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -29,14 +29,29 @@
   transition: transform 0.3s ease;
 }
 
+.drink-card::after {
+  content: '👆';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
 .drink-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(45, 24, 16, 0.12);
-  border-color: rgba(255, 107, 53, 0.2);
+  border-color: rgba(255, 107, 53, 0.3);
 }
 
 .drink-card:hover::before {
   transform: scaleX(1);
+}
+
+.drink-card:hover::after {
+  opacity: 0.6;
 }
 
 .drink-header {
@@ -84,10 +99,11 @@
 
 .drink-description {
   font-size: 14px;
-  color: #6b5b47;
+  color: #4a3c2e;
   line-height: 1.5;
   margin: 12px 0 0 0;
   font-style: italic;
+  font-weight: 500;
 }
 
 .drink-new {
@@ -114,19 +130,29 @@
   
   .drink-name {
     font-size: 16px;
+    line-height: 1.2;
   }
   
   .drink-price {
     font-size: 18px;
     padding: 4px 10px;
+    min-width: fit-content;
+    white-space: nowrap;
   }
   
   .drink-size {
     font-size: 13px;
+    padding: 3px 6px;
   }
   
   .drink-description {
     font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .drink-header {
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }
 
@@ -143,18 +169,33 @@
   
   .drink-name {
     font-size: 15px;
+    line-height: 1.2;
   }
   
   .drink-price {
     font-size: 16px;
     padding: 3px 8px;
+    min-width: fit-content;
+    white-space: nowrap;
   }
   
   .drink-size {
     font-size: 12px;
+    padding: 2px 5px;
   }
   
   .drink-description {
     font-size: 12px;
+    line-height: 1.3;
+  }
+  
+  .drink-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  
+  .drink-details-row {
+    justify-content: flex-start;
   }
 } 
