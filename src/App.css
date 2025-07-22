@@ -412,7 +412,7 @@ main {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .room-name {
@@ -421,6 +421,7 @@ main {
   color: #2d1810;
   margin: 0 0 16px 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
 }
 
 .room-description {
@@ -429,6 +430,7 @@ main {
   line-height: 1.5;
   margin: 0 0 24px 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
 }
 
 .room-features {
@@ -436,6 +438,7 @@ main {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 24px;
+  justify-content: flex-start;
 }
 
 .room-feature {
@@ -454,6 +457,7 @@ main {
   color: #e63900;
   margin-bottom: 16px;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
 }
 
 .room-book-btn {
@@ -467,6 +471,7 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  align-self: flex-start;
 }
 
 .room-book-btn:hover {
