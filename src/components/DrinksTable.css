@@ -14,14 +14,30 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   backdrop-filter: blur(10px);
+}
+
+.drink-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ff6b35;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .drink-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(45, 24, 16, 0.12);
   border-color: rgba(255, 107, 53, 0.2);
+}
+
+.drink-card:hover::before {
+  transform: scaleX(1);
 }
 
 .drink-header {
