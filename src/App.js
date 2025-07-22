@@ -454,31 +454,6 @@ const extras = [
   },
 ];
 
-// Пример данных для галереи номеров
-const hotelRooms = [
-  {
-    name: 'Standard Room',
-    description: 'Comfortable and modern room with all essential amenities.',
-    price: 'from $180',
-    features: ['Queen Bed', 'City View', 'Free WiFi'],
-    images: [
-      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800',
-      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800'
-    ]
-  },
-  {
-    name: 'Deluxe Suite',
-    description: 'Spacious suite with premium amenities and stunning views.',
-    price: 'from $320',
-    features: ['King Bed', 'Mountain View', 'Balcony', 'Free WiFi'],
-    images: [
-      'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800',
-      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800'
-    ]
-  }
-];
 
 function Section({ title, children }) {
   return (
